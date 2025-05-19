@@ -1,86 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Sample HTML5 Document</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        header, footer {
-            background-color: #f8f8f8;
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #ddd;
-        }
-        main {
-            margin: 20px 0;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        article {
-            background-color: #eef;
-            padding: 10px;
-            border: 1px solid #bbc;
-        }
-    </style>
+    <title>Basic HTML Web Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS (optional) -->
 </head>
+
 <body>
+    <header>
+        <h1>Welcome to My Basic Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>Welcome to My Website</h1>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-    <section id="about">
-        <h2>About Us</h2>
-        <article>
-            <h3>Our Mission</h3>
-            <p>We strive to provide the best services to our clients, ensuring maximum satisfaction and quality.</p>
-        </article>
-        <article>
-            <h3>Our History</h3>
-            <p>Founded in 2021, our company has grown from a small startup into a leading enterprise in our field.</p>
-        </article>
+    <section id="home">
+        <h2>Home Section</h2>
+        <p>This is a paragraph of text in the home section. You can put any content here.</p>
+        <p>HTML stands for HyperText Markup Language, and it is the standard language for creating web pages.</p>
+        <p>HTML is made up of various elements like headings, paragraphs, links, and more!</p>
     </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Here is a bit of information about me.</p>
         <ul>
-            <li>Consulting</li>
-            <li>Product Development</li>
-            <li>Customer Support</li>
+            <li>Name: Anayo Stanley</li>
+            <li>Profession: Web Developer</li>
+            <li>Hobbies: Coding, Reading, Traveling</li>
         </ul>
+        <img src="profile.jpg" alt="John Doe" width="200">
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="/submit-form" method="post">
+        <h2>Contact Me</h2>
+        <form action="" method="POST">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="name" required><br><br>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="email" required><br><br>
 
-            <input type="submit" value="Send" />
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
         </form>
     </section>
-</main>
 
-<footer>
-    <p>&copy; 2023 My Company. All rights reserved.</p>
-</footer>
+    <footer>
+        <p>© 2025 Anayo Stanley</p>
+    </footer>
 
 </body>
+
 </html>
